@@ -4,7 +4,7 @@ import time
 # Interne LED an Pin 2 (bei vielen ESP32-Boards Arduino könnte anders sein)
 led = Pin(2, Pin.OUT)
 
-zahl = int(input(" Wie oft soll die interne blaue LED des ESP blinken?: "))
+zahl = int(input(" Wie oft soll die interne blaue LED des ESP blinken?:  "))
 
 
 for i in range(zahl):
