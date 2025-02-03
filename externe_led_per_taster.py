@@ -1,7 +1,7 @@
 from machine import Pin
 
 # LED und Button konfigurieren am Arduino NANOESP32
-led = Pin(5, Pin.OUT) # D2
+led = Pin(8, Pin.OUT) # D5
 button = Pin(7, Pin.IN, Pin.PULL_UP) # D4
 
 while True:
