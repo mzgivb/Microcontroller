@@ -10,7 +10,8 @@ def main():
         randomNumber = random.randint(0,100) #Generate random number in the range 0 to 100
         
         p.write(randomNumber)                #Send value to phyphox
-        time.sleep_ms(500)                   #Shortly pause before repeating
+        time.sleep_ms(500)  #Shortly pause before repeating
+        print (randomNumber)    
             
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+main()
