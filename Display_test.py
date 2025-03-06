@@ -1,9 +1,9 @@
 from machine import I2C, Pin
-from machine_i2c_lcd import I2cLcd
+from i2c_lcd import I2cLcd
 from time import sleep
 
 # I2C initialisieren
-i2c = I2C(0, scl=Pin(22), sda=Pin(21), freq=400000)
+i2c = I2C(0, scl=Pin(12), sda=Pin(11), freq=400000)
 
 # LCD initialisieren (16x2 Display)
 lcd = I2cLcd(i2c, 0x3F, 2, 16)  # 0x3F ist die Adresse, passe sie ggf. an
