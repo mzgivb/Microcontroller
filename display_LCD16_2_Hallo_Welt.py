@@ -2,7 +2,7 @@ from machine import I2C, Pin
 from i2c_lcd import I2cLcd
 
 # I2C initialisieren
-i2c = I2C(0, scl=Pin(12), sda=Pin(11), freq=400000)
+i2c = I2C(0, scl=Pin(12), sda=Pin(11), freq=400000) #VBUS nutzen statt 3V
 
 # LCD initialisieren (16x2 Display)
 I2C_ADDR = 0x3F  # Verwende die tatsächliche Adresse

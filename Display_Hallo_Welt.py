@@ -11,6 +11,6 @@ I2C_ADDR = 0x3f  # Beispieladresse, ersetze durch die tatsächliche Adresse
 lcd = I2cLcd(i2c, I2C_ADDR, 2, 16)
 lcd.clear()  # Bildschirm löschen
 lcd.backlight_on()  # Hintergrundbeleuchtung einschalten
-lcd.putstr("Neustart läuft...")  # Nachricht anzeigen
+lcd.putstr("Neustart laeuft...")  # Nachricht anzeigen
 # Text anzeigen
 lcd.putstr("Hallo Welt!")
