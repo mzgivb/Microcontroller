@@ -1,5 +1,6 @@
 from machine import I2C, Pin
 from i2c_lcd import I2cLcd
+from phyphoxBLE import PhyphoxBLE, Experiment
 import dht
 import time
 
@@ -12,13 +13,17 @@ lcd = I2cLcd(i2c, I2C_ADDR, 2, 16)  # 2 Zeilen, 16 Zeichen
 dht_pin = Pin(8,Pin.OUT)
 sensor = dht.DHT11(dht_pin)
 def main():
-      while True:
+    p = PhyphoxBLE()
+    p.start()
+    while True:
          try:
             sensor.measure()
             humidity = sensor.humidity()               #Send value to phyphox
             time.sleep_ms(500)  #Shortly pause before repeating
             lcd.clear()   # Bildschirm löschen und Text anzeigen      
             lcd.putstr(f"Luftfeuchtigkeit: {humidity}%")
+            p.write(humidity)                #Send value to phyphox
+            time.sleep_ms(500) 
             print(f"Luftfeuchtigkeit: {humidity}%")
          except OSError as e:
             print("Fehler beim Auslesen des DHT11:", e)
