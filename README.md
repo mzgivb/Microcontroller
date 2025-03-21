@@ -1,6 +1,6 @@
 # Microcontroller
 
-Das ist ein Kurs der micropython als Programmiersprache verwendet um Microcontroller zu programmieren. In erster Linie werden ESP32 verwendet.
+Das ist ein Kurs der micropython als Programmiersprache verwendet um Microcontroller zu programmieren. verwendet wurde der Arduino Nano ESP32.
 
 # Libarys
 
