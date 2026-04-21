@@ -81,13 +81,6 @@ Empfohlene Vorgehensweise im Unterricht:
 - LEDs **immer** mit Vorwiderstand (220 Ω) betreiben
 - Kein Löten im Regelbetrieb – nur Breadboard-Aufbauten
 
-## Historische Arduino-Nano-ESP32-Version
-
-Die ursprüngliche ESP32-Variante der Skripte liegt im Ordner
-[`legacy_esp32/`](legacy_esp32/). Für die Projektwoche wird auf Pico H migriert,
-weil dort bereits erprobte Workshop-Materialien (Wetterstation, Alarmanlage)
-existieren.
-
 ## Lizenz
 
 Das Material ist frei für Bildungszwecke verwendbar.
